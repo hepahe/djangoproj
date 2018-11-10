@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>Uusi kirjoitus</h2>
+    <form method="POST" class="post-form">{% csrf_token %}¨
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Tallenna</button>
+         </form>
+
+ {% endblock %}
